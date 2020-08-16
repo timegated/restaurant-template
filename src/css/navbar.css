@@ -1,0 +1,25 @@
+.main-header {
+    background: burlywood;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+
+}
+
+.main-menu__items {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.main-menu__item {
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.main-menu__item a {
+    text-decoration: none;
+}
