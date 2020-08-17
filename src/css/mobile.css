@@ -1,3 +1,13 @@
 .mobile-menu {
+  margin-top: 10px;
   display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-menu {
+    display: block;
+  }
+  .main-header {
+    display: none;
+  }
 }
