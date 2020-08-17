@@ -1,4 +1,6 @@
 @import url("./navbar.css");
+@import url("./typography.css");
+@import url("./mobile.css");
 
 *,
 *:before,
@@ -11,4 +13,9 @@
 html, body {
     margin: 0;
     padding: 0;
+}
+
+main {
+    margin-top: 10rem;
+    border: 1px solid black;
 }

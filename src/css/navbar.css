@@ -7,19 +7,24 @@
     padding: 24px;
 
 }
+.main-menu__logo {
+    line-height: 1rem;
+    display: inline-block;
+}
 
 .main-menu__items {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     list-style: none;
+    line-height: 1rem;
 }
 
 .main-menu__item {
     padding: 1rem;
-    background: white;
-    border-radius: 10px;
+    margin-left: 1rem;
 }
 
 .main-menu__item a {
     text-decoration: none;
+    font-size: 1.5rem;
 }
