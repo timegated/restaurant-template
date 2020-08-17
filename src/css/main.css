@@ -1,6 +1,8 @@
 @import url("./navbar.css");
 @import url("./typography.css");
 @import url("./mobile.css");
+@import url("./about.css");
+@import url("./menu.css");
 
 *,
 *:before,
@@ -16,16 +18,11 @@ html, body {
 }
 
 main {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 10rem auto;
 }
 
-.about-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-}
-
 section {
-    border: 1px solid tomato;
     padding: 1rem;
 }
+
