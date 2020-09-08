@@ -1,3 +1,5 @@
-import '../css/main.css'
+import { navbar } from './components/navigation';
+import '../css/main.css';
 
-console.log('Hello from this bundled js file')
+
+navbar();
