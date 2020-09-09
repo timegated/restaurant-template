@@ -15,9 +15,31 @@ export const navbar = () => {
     const navListItem = document.createElement('li');
     const navListLink = document.createElement('a');
     navListLink.textContent = link;
-    navListLink.href = `#${link.toLowerCase()}`
+    navListLink.href = `#${link.toLowerCase()}`;
     navListItem.appendChild(navListLink);
-    navList.appendChild(navListItem)
+    navList.appendChild(navListItem);
+
+    navListLink.addEventListener('click', (e) => {
+      const link = e.target.textContent;
+      
+      switch (link) {
+        case 'Home':
+          console.log('Home')
+          break;
+        case 'About':
+          console.log('About')
+          break;
+        case 'Menu':
+          console.log('Menu')
+          break;
+        case 'Contact':
+          console.log('Contact')
+          break;
+        default:
+          console.error('Fall Through')
+      }
+    });
+
     return navListItem;
   });
   
