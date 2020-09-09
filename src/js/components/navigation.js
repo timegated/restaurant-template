@@ -1,12 +1,18 @@
+import { homePage } from './home';
+import { about } from './about';
+import { menu } from './menu';
+import { contact } from './contact';
+
 export const navbar = () => {
   const navLinksText = ['Home', 'About', 'Menu', 'Contact'];
-
-  const navContainer = document.createElement('header')
+  const navContainer = document.createElement('header');
   navContainer.classList.add('main-nav');
 
   const navElement = document.createElement('nav');
+  navElement.classList.add('main-nav__container');
 
   const navList = document.createElement('ul');
+  navList.classList.add('main-nav__list');
 
   navContainer.appendChild(navElement);
   navElement.appendChild(navList);
@@ -21,27 +27,32 @@ export const navbar = () => {
 
     navListLink.addEventListener('click', (e) => {
       const link = e.target.textContent;
-      
+      const contentWrapper = document.querySelector('#content-area__wrapper');
+    
       switch (link) {
         case 'Home':
-          console.log('Home')
+          contentWrapper.remove();
+          homePage();
           break;
         case 'About':
-          console.log('About')
+          contentWrapper.remove();
+          about();
           break;
         case 'Menu':
-          console.log('Menu')
+          contentWrapper.remove();
+          menu();
           break;
         case 'Contact':
-          console.log('Contact')
+          contentWrapper.remove();
+          contact();
           break;
         default:
-          console.error('Fall Through')
+          console.error('Fall Through');
       }
     });
 
     return navListItem;
   });
   
-  document.body.appendChild(navContainer)
+  document.body.appendChild(navContainer);
 };
