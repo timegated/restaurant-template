@@ -11,6 +11,7 @@ export const about = () => {
 };
 
 
-export const util = (area, wrapper) => {
-
+export const util = (id) => {
+  const area = document.querySelector(id);  
+  return area;
 };

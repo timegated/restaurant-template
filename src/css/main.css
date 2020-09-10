@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
+:root {
+  --dark: hsl(209, 61%, 19%);
+  --neutral-1: hsl(210,31%, 80%);
+  --neutral-2: hsl(212, 33%, 89%);
+  --neutral-3: hsl(210, 36%, 96%);
+  --neutral-3-light: hsla(210, 36%, 96%, 0.3);
+  --neutral-3-darker: hsla(210, 36%, 96%, 0.8);
+  --neutral-4: hsl(210, 22%, 49%);
+  --neutral-4-light: hsla(210, 22%, 49%, 0.3);
+  --neutral-4-darker: hsla(210, 22%, 49%, 0.8);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +21,60 @@ html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Syne',sans-serif;
+}
+/* Mobile Navigation */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main-nav__container {
+  padding: 1.5rem;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  list-style: none;
+}
+
+.main-nav__list li {
+  margin: 0 0.5rem 0 0;
+}
+
+.main-nav__list li a {
+  color: var(--neutral-4);
+  border-radius: 10px;
+  font-size: 1.3rem;
+  box-shadow: 1px 1px 1px var(--neutral-3-light);
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.main-nav__list li a:hover,
+.main-nav__list li a:active {
+  color: var(--dark);
+  box-shadow: 1px var(--neutral-4);
+  background: var(--neutral-3);
+  transition: all 0.2s ease;
+}
+/* End Navigation */
+
+/* Main Content Area*/
+
+.main-content {
+  position: relative;
+  margin: 5rem 0 0 0;
+}
+
+
+@media (min-width: 680px) {
+  .main-nav__list li a {
+    font-size: 1.5rem;
+    padding: 1rem
+  }
 }

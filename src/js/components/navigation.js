@@ -8,6 +8,8 @@ export const navbar = () => {
   const navContainer = document.createElement('header');
   navContainer.classList.add('main-nav');
 
+  const mainContent = document.querySelector('#content-area');
+
   const navElement = document.createElement('nav');
   navElement.classList.add('main-nav__container');
 
@@ -54,5 +56,5 @@ export const navbar = () => {
     return navListItem;
   });
   
-  document.body.appendChild(navContainer);
+  document.body.insertBefore(navContainer, mainContent);
 };
