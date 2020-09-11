@@ -29,6 +29,7 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
+  background: var(--neutral-3);
 }
 
 .main-nav__container {
@@ -56,7 +57,7 @@ html, body {
 }
 
 .main-nav__list li a:hover,
-.main-nav__list li a:active {
+.main-nav__list li a:visited {
   color: var(--dark);
   box-shadow: 1px var(--neutral-4);
   background: var(--neutral-3);
@@ -77,4 +78,10 @@ html, body {
     font-size: 1.5rem;
     padding: 1rem
   }
+}
+
+/* Menu */
+
+.menu-item {
+  border: 1px solid black;
 }
